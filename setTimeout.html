@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            document.write("start");
+            setTimeout(()=>{
+                document.write("Executed after 5 secs: ");
+            },5000);
+            document.write("End");
+        // repeat the function at regular
+        let count = 0;
+        let id = setInterval(() => {
+            count++;
+            document.write("Repeat MRU ", count);
+            if (count === 10) clearInterval(id);
+        }, 2000);
+        </script>
+
+        
+    </body>
+
+
+
+</html>

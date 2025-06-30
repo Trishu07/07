@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function AddName(){
+                const name=document.getElementById("name").value;
+                let li=document.createElement("li");
+                li.textContent=name;
+                document.getElementById("list").appendChild(li);
+            }
+        </script>
+    </head>
+    <body>
+        <label for = "sname">Student name</label>
+        <input type="text" id="name">
+        <button onclick="AddName()">Add Name</button>
+        <ul id="list"></ul>
+    </body>
+</html>

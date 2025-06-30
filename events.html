@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        // on click event.
+        <button onclick="showMessage()">display</button>
+        <script>
+        function showMessage(){
+            alert("clicked");
+            }
+        </script>
+
+
+        //on mouse event
+        <p onmouseover="changeText(this)">Hover over me</p>
+        <script>
+            function changeText(element){
+                element.innerText="hovered";
+            }
+        </script><br>
+
+        //keydown events
+        <input type="text" id="myInput" placeholder="Type something">
+        <script>
+            document.getElementById("myInput").addEventListener("keydown",function(){
+                document.write("key is being pressed");
+            })
+        </script><br><br>
+
+        //Submit event..
+        <form id="myForm">
+            <input type="text" placeholder="Enter name" required>
+            <button type="submit">submit</button>
+        </form>
+        <script>
+            document.getElementById("myForm").addEventListener("submit", function(e){
+                e.preventDefault();
+                alert("Forms submitted");
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="message">wait for it..</p>
+        <script>
+        setTimeout(() => {
+            document.getElementById("message").innerText = "Text changed";
+        }, 3000);
+        </script>
+        
+        <!-- alert after 3 secs -->
+        <script>
+        document.write("start");
+            setTimeout(()=>{
+                alert("alert")
+            },3000);
+        </script><br><br>
+
+        <!-- button click show message after 5 sec -->
+         <button onclick="showMessage()">display</button>
+        <script>
+        function showMessage(){
+            setTimeout(()=>{
+            alert("clicked");
+            },5000);
+        }
+        </script>
+
+        <!-- change background color after 2 sec -->
+         <script>
+            setTimeout(()=>{
+                document.body.style.backgroundColor="pink";
+            },2000);
+         </script>
+    </body>
+</html>
