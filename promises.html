@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>promises</title>
+    </head>
+    <body>
+        <!-- <script>
+        const fetchData = new Promise((resolve, reject) => {
+            let success = true;
+            setTimeout(() => {
+                if (success) resolve("data fetched successfully");
+                else reject("error");
+            }, 2000);
+        });
+        fetchData.then(data => document.write(data))
+        .catch(err => document.write(err));
+        </script> -->
+
+        <script>
+            const lateMessage=new Promise((resolve, reject) =>{
+                setTimeout(()=> {
+                    resolve("Hello this message is delayed for 2 secs");
+                }, 2000);
+            })
+            lateMessage.then(data => document.write(data))
+            .catch(err => document.write(err5));
+        </script>
+    </body>
+</html>

@@ -4,7 +4,12 @@
         
     </head>
     <body>
+<<<<<<< HEAD
         // on click event.
+=======
+        <!-- // on click event. -->
+         <lable for="onclick event">onclick event: </lable>
+>>>>>>> 55f8a17 (g)
         <button onclick="showMessage()">display</button>
         <script>
         function showMessage(){
@@ -13,7 +18,11 @@
         </script>
 
 
+<<<<<<< HEAD
         //on mouse event
+=======
+        <!-- //on mouse event -->
+>>>>>>> 55f8a17 (g)
         <p onmouseover="changeText(this)">Hover over me</p>
         <script>
             function changeText(element){
@@ -21,7 +30,12 @@
             }
         </script><br>
 
+<<<<<<< HEAD
         //keydown events
+=======
+        <!-- //keydown events -->
+         <lable for="keydown event">keydown event: </lable>
+>>>>>>> 55f8a17 (g)
         <input type="text" id="myInput" placeholder="Type something">
         <script>
             document.getElementById("myInput").addEventListener("keydown",function(){
@@ -29,8 +43,14 @@
             })
         </script><br><br>
 
+<<<<<<< HEAD
         //Submit event..
         <form id="myForm">
+=======
+        <!-- //Submit event.. -->
+        <form id="myForm">
+            <lable for="submit event">Submit event: </lable>
+>>>>>>> 55f8a17 (g)
             <input type="text" placeholder="Enter name" required>
             <button type="submit">submit</button>
         </form>
@@ -39,6 +59,27 @@
                 e.preventDefault();
                 alert("Forms submitted");
             })
+<<<<<<< HEAD
         </script>
+=======
+        </script><br>
+
+        <!-- change event :- triggered when value is changed -->
+        <lable for="change event">change event: </lable>
+        <select onchange="alert('you selected '+ this.value)">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JAVA">JAVA</option>
+        </select><br><br>
+
+        <lable for="select fruit">select fruit: </lable>
+        <select onchange="alert('you selected '+ this.value)">
+            <option value="select">Select</option>
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Mango">Mango</option>
+        </select>
+
+>>>>>>> 55f8a17 (g)
     </body>
 </html>
